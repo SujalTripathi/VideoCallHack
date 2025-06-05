@@ -8,9 +8,8 @@ A full-stack video conferencing web application inspired by Zoom. This project a
 - 🎥 Real-time video and audio calling
 - 💬 Text chat within meeting rooms
 - 👥 Multiple participants support
-- 📱 Responsive UI for all screen sizes
+- 📱 Responsive UI for all screen Calls
 - 🔐 Unique meeting room IDs
-- 📎 Clipboard copy functionality for sharing links
 
 ## 🛠️ Tech Stack
 
@@ -25,7 +24,6 @@ A full-stack video conferencing web application inspired by Zoom. This project a
 - Express.js  
 - Socket.io  
 - UUID  
-- PeerJS (optional, if used)
 
 **Other Tools**  
 - Git & GitHub  
