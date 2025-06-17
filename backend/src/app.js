@@ -13,10 +13,16 @@ const io = connectToSocket(server);
 
 app.set("port", process.env.PORT || 8000);
 app.use(cors({
-  origin: ["http://localhost:3000", "https://videocallhack.onrender.com/", "https://videocallhack.onrender.com/auth"], 
+  origin: [
+    "http://localhost:3000",
+    "https://videocallhack.onrender.com"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
+app.options("*", cors()); // Enables pre-flight across all routes
+
 app.use(express.json({ limit: "40kb"}));
 app.use(express.urlencoded({ limit: "40kb", extended: true }))
 

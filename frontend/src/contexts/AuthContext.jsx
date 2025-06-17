@@ -7,8 +7,11 @@ import server from "../environment"; // should be like "http://localhost:8000"
 export const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${server}/api/v1/users`
+  baseURL: `${server}/api/v1/users`,
+  withCredentials: true,
+  timeout: 30000
 });
+
 
 export const AuthProvider = ({ children }) => {
   const [userData, setUserData] = useState(null);
