@@ -1,3 +1,62 @@
+.lobbyContainer {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #199fa9 0%, #66a6ff 100%); 
+  box-shadow: 0 15px 30px rgba(238, 2, 247, 0.861);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title styling */
+.slideTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* TextField styling */
+.textField {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Connect Button Styling */
+.connect {
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.connect:hover {
+  background-color: #45a049;
+}
+
+/* Video wrapper styling */
+.videoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  background: #000;
+}
+
 .meetVideoContainer {
     position: relative;
     height: 100vh;

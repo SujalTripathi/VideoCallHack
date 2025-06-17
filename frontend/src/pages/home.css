@@ -1,0 +1,52 @@
+/* Gradient background for hero section */
+.bg-gradient {
+  background: linear-gradient(135deg, #00c3ff, #ffff1c) !important;
+}
+
+/* For page sections to look distinct like pages */
+.page-section {
+  padding: 60px 20px;
+  width: 100%;
+}
+
+/* Specific styling for hero section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Transition Effects for hover */
+.hover-shadow:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Smooth transition for other hover effects */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Container box for hero content with a semi-transparent background and padding */
+.content-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1.2rem;
+  }
+}
