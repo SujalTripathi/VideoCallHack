@@ -34,7 +34,7 @@ export default function VideoMeetComponent() {
 
     let [audioAvailable, setAudioAvailable] = useState(true);
 
-    let [video, setVideo] = useState([]);
+    let [video, setVideo] = useState(true);
 
     let [audio, setAudio] = useState();
 
@@ -64,11 +64,10 @@ export default function VideoMeetComponent() {
 
     // }
 
-    useEffect(() => {
-        console.log("HELLO")
-        getPermissions();
+   useEffect(() => {
+    getPermissions();
+}, []);
 
-    })
 
     let getDislayMedia = () => {
         if (screen) {
@@ -383,9 +382,13 @@ export default function VideoMeetComponent() {
     }
 
     let handleVideo = () => {
-        setVideo(!video);
-        // getUserMedia();
-    }
+    setVideo((prev) => {
+        const newValue = !prev;
+        setTimeout(getUserMedia, 0); // update stream after state change
+        return newValue;
+    });
+};
+
     let handleAudio = () => {
         setAudio(!audio)
         // getUserMedia();
