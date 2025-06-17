@@ -13,7 +13,7 @@ const io = connectToSocket(server);
 
 app.set("port", process.env.PORT || 8000);
 app.use(cors({
-  origin: ["*"], 
+  origin: ["http://localhost:3000", "https://videocallhack.onrender.com/", "https://videocallhack.onrender.com/auth"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
