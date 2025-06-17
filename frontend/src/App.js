@@ -4,6 +4,8 @@ import Home from './pages/home';
 import Authentication from "./pages/authentication";
 import VideoMeetComponent from "./pages/VideoMeet";
 import { AuthProvider } from "./contexts/AuthContext";
+import History from "./pages/history";
+import HomeComponent from "./pages/home";
 
 function App() {
   return (
