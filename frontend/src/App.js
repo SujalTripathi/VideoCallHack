@@ -13,8 +13,7 @@ function App() {
           <Routes>
                     <Route path="/" element={<Home />} />
             <Route path="/auth" element={<Authentication />} />
-            <Route path="/:url" element={<VideoMeetComponent/>}></Route>
-
+            <Route path="/:meetingId" element={<VideoMeetComponent />} />
           </Routes>
         </AuthProvider>
       </Router>
