@@ -13,7 +13,14 @@ function App() {
           <Routes>
                     <Route path="/" element={<Home />} />
             <Route path="/auth" element={<Authentication />} />
+             <Route path="/home" element={<HomeComponent />}>
+                </Route>
+            <Route path="/history" element={<History />}>
+                </Route>
             <Route path="/:meetingId" element={<VideoMeetComponent />} />
+              <Route path="/:url" element={<VideoMeetComponent/>}></Route>
+
+
           </Routes>
         </AuthProvider>
       </Router>
