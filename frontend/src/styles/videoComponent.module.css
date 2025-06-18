@@ -3,27 +3,24 @@
   margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #199fa9 0%, #66a6ff 100%); 
+  background: linear-gradient(135deg, #199fa9 0%, #66a6ff 100%);
   box-shadow: 0 15px 30px rgba(238, 2, 247, 0.861);
   font-family: 'Arial', sans-serif;
   position: relative;
   overflow: hidden;
 }
 
-/* Title styling */
 .slideTitle {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* TextField styling */
 .textField {
   margin-bottom: 20px;
   width: 100%;
 }
 
-/* Connect Button Styling */
 .connect {
   padding: 12px 24px;
   font-weight: bold;
@@ -38,7 +35,6 @@
   background-color: #45a049;
 }
 
-/* Video wrapper styling */
 .videoWrapper {
   width: 100%;
   display: flex;
@@ -58,64 +54,160 @@ video {
 }
 
 .meetVideoContainer {
-    position: relative;
-    height: 100vh;
-    background: rgb(1, 4, 48);
+  position: relative;
+  min-height: 100vh;
+  background: rgb(1, 4, 48);
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
 
 .meetUserVideo {
-    position: absolute;
-    bottom: 10vh;
-    height: 20vh;
-    width: auto;
-    left: 0;
-    border-radius: 20px;
+  position: absolute;
+  bottom: 10vh;
+  left: 10px;
+  height: 20vh;
+  width: auto;
+  border-radius: 20px;
+  z-index: 2;
+  background: #000;
 }
 
 .buttonContainers {
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-    text-align: center;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background: rgba(1,4,48,0.95);
+  padding: 10px 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .buttonContainers svg {
-    font-size: 3rem;
+  font-size: 2.5rem;
 }
 
-.conferenceView { 
-
-    display: flex;
-    
-    padding: 10px;
-    gap: 10px;
+.conferenceView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding: 10px;
 }
 
-.conferenceView  video {
-    width: 40vw;
-    height: 20vh;
-    min-width: 30vw;
-    border-radius: 10px;
+.conferenceView video {
+  width: 40vw;
+  height: 20vh;
+  min-width: 30vw;
+  border-radius: 10px;
+  background: #000;
 }
 
 .chatRoom {
-    position: absolute;
-    height: 90vh;
-    right: 0;
-    background: white;
-    border-radius: 10px;
-    width: 30vw;
-    padding-inline: 20px;
+  position: fixed;
+  height: 90vh;
+  right: 0;
+  top: 0;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  width: 30vw;
+  min-width: 250px;
+  max-width: 400px;
+  padding-inline: 20px;
+  z-index: 20;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
 }
 
 .chatContainer {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+.chattingDisplay {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
 
 .chattingArea {
-    position: absolute;
-    bottom: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
+@media (max-width: 900px) {
+  .chatRoom {
+    width: 50vw;
+    min-width: 180px;
+    padding-inline: 8px;
+  }
+  .conferenceView video {
+    width: 80vw;
+    min-width: 60vw;
+    height: 25vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .lobbyContainer {
+    max-width: 98vw;
+    padding: 10px;
+  }
+  .meetVideoContainer {
+    padding-bottom: 60px;
+  }
+  .meetUserVideo {
+    position: static;
+    width: 100vw;
+    height: 25vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .conferenceView {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+  .conferenceView video {
+    width: 95vw;
+    min-width: unset;
+    height: 25vh;
+    border-radius: 10px;
+  }
+  .chatRoom {
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: unset;
+    border-radius: 10px 10px 0 0;
+    padding-inline: 10px;
+    z-index: 100;
+  }
+  .buttonContainers {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    background: rgba(1,4,48,0.95);
+    padding: 8px 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .buttonContainers svg {
+    font-size: 2rem;
+  }
+}

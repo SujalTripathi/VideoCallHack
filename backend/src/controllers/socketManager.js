@@ -70,7 +70,7 @@ export const connectToSocket = (server) => {
                 console.log("messages", matchingRoom, ":", sender, data);
 
                 connections[matchingRoom].forEach((elem) => {
-                    io.to(elem).emit("chat-messages", data, sender, socket.id);
+                    io.to(elem).emit("chat-message", data, sender, socket.id);
                 });
             }
         });
