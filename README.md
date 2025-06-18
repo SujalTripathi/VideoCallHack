@@ -18,7 +18,8 @@ A modern video conferencing web application built with **React.js**, allowing us
 ## 🖼️ Screenshots
  screenshots or GIFs here to show off your UI! Example:
 
-![Lobby Screenshot](![image](https://github.com/user-attachments/assets/23cd7890-b8d6-47e8-8bee-f0d4823bafc6)
+![Lobby Screenshot](![Screenshot 2025-06-17 142534](https://github.com/user-attachments/assets/54b39672-1813-4fff-a14e-835a8d0c9019)
+)
 )
 ![Meeting Screenshot](![image](https://github.com/user-attachments/assets/18713f85-32e9-4918-88f0-9421848f8259)
 )
