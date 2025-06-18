@@ -15,13 +15,22 @@ app.set("port", process.env.PORT || 8000);
 app.use(cors({
   origin: [
     "http://localhost:3001",
+    "http://localhost:3000",
     "https://videocallhack.onrender.com"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
-app.options("*", cors()); // Enables pre-flight across all routes
+app.options("*", cors({
+  origin: [
+    "http://localhost:3001",
+    "http://localhost:3000",
+    "https://videocallhack.onrender.com"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.use(express.json({ limit: "40kb"}));
 app.use(express.urlencoded({ limit: "40kb", extended: true }))
