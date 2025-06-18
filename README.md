@@ -21,7 +21,8 @@ A modern video conferencing web application built with **React.js**, allowing us
 ![Lobby Screenshot](![Screenshot 2025-06-17 142534](https://github.com/user-attachments/assets/54b39672-1813-4fff-a14e-835a8d0c9019)
 )
 )
-![Meeting Screenshot](![image](https://github.com/user-attachments/assets/18713f85-32e9-4918-88f0-9421848f8259)
+![Meeting Screenshot](![Screenshot 2025-06-18 110655](https://github.com/user-attachments/assets/fb57ef84-53af-4bb7-b43b-e3ca44611083)
+)
 )
 
 ---
