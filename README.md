@@ -16,7 +16,7 @@ A modern video conferencing web application built with **React.js**, allowing us
 ---
 
 ## 🖼️ Screenshots
- screenshots or GIFs here to show off your UI! Example:
+ screenshots or GIFs here to show off UI! Example:
 
 ![Lobby Screenshot](![Screenshot 2025-06-17 142534](https://github.com/user-attachments/assets/54b39672-1813-4fff-a14e-835a8d0c9019)
 )
@@ -32,7 +32,7 @@ A modern video conferencing web application built with **React.js**, allowing us
 - **Frontend**: React.js, Material-UI
 - **State Management**: React Hooks (useState, useEffect)
 - **Video API**: WebRTC or getUserMedia
-- **Real-Time Chat**: (Socket.IO or peer-to-peer depending on your setup)
+- **Real-Time Chat**: (Socket.IO and peer-to-peer depending)
 - **Styling**: CSS Modules
 
 ---
